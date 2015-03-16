@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  root :to => "welcome#index" 
+
+
+ resources :registrations
+
+  get 'welcome/index'
+  get 'about/index'
+  get '/registrations/' => 'registrations#index'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

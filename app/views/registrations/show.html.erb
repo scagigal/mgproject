@@ -1,0 +1,46 @@
+<div class="container">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Last:</strong>
+  <%= @registration.last %>
+</p>
+
+<p>
+  <strong>First:</strong>
+  <%= @registration.first %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @registration.address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @registration.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @registration.state %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @registration.country %>
+</p>
+
+<p>
+  <strong>Postal:</strong>
+  <%= @registration.postal %>
+</p>
+
+<p>
+  <strong>Login:</strong>
+  <%= @registration.login %>
+</p>
+
+<%= link_to 'Edit', edit_registration_path(@registration) %> |
+<%= link_to 'Back', registrations_path %>
+</div>
